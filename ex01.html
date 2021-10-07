@@ -41,7 +41,7 @@
 		/*transition : all 1.5s steps(4,end) 0.5s;*/
 		}
 		
-		nav ul { list-style: none; display: flex; }  /*none 은 ul사용시 생성된 점을 없애줌. flex는 가로 정렬*/
+		nav ul { list-style: none; display: flex; justify-content: flex-end;}  /*none 은 ul사용시 생성된 점을 없애줌. flex는 가로 정렬. flex가 있으면 justify로 정렬가능 */
 		nav ul li { margin: 0 3px; padding: 10px 10px; }   /*margin은 바깥쪽으로 여백 주기. 위 아래는 0, 왼쪽과 오른쪽은 3px씩.  padding은 안족으로 여백저서 두께 조절 */
 		nav ul li a { text-decoration: none; color: white; }
 		nav ul li a:hover {
@@ -51,8 +51,9 @@
 			transition: all 0.25s; /*0.25초 안에 완성*/
 		}
 		
-		.div02 { overflow: hidden; background-color: blue; height:100px; }
-		.div02 div { background-color: red; width: 200px; height: 200px; color: white;}
+		/*.div02 { overflow: hidden; background-color: blue; height:100px; }*/
+		/*.div02 div { background-color: red; width: 200px; height: 200px; color: white;}*/
+		.div02{ background-color: gray; text-align: right; }
 		
 	</style>
 	

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h2:first-letter { font-size: 30px; color: red; text-transform: uppercase; }
+	h3:first-line { color: blue; }
+	input:focus { background-color: #FFA7A7; }
+	label{ color: white; }
+	input:checked + label{ background-color: gray; } 
+	.div01{
+		background-color: yellow; width: 300px;  
+		padding: 25px; /*안쪽으로 여백. 하나만 주면 위오른쪽아래왼쪽 모두 적용*/ 
+		padding-top: 40px; 
+		border: 15px solid navy;  /*테두리*/
+		border-bottom: 15px solid pink; 
+		border-top: 15px double red; 
+		border-right: 5px dotted gray; 
+		margin: 50px; 
+		margin-top: 40px; /*바깥으로 밀어냄*/
+		box-shadow: 10px 10px 15px black ; 
+	}
+	.title{font-family: "굴림"; text-shadow: 10px -3px 15px black; 
+			font-size: 30pt; }  /*양수면 오른쪽 음수면 왼쪽, 양수면 아래쪽 음수면 위쪽 , 뿌옇게 번진 정도*/ 
+	
+	img{ width: 200px; height: 150px; box-shadow: 10px 7px 15px black; }
+	
+</style>
+</head>
+<body>
+	
+	<img src="resources/images/quiz.png">
+	
+<hr>
+	<h1 class="title">제목이 들어갑니다</h1>
+<hr>	
+	<div class="div01">
+		박스모델 padding, border, margin 속성의 기본값은 0.<br>
+		상우하좌 방향 top, right, bottom left.
+	</div>
+<hr>	
+	<h2>hello</h2>
+	<h3>문제) 대한민국<br>수도는???</h3>
+	정답 <input type="text"><br>
+	힌트 <input type="checkbox"><label>힌트입니다~</label>
+</body>
+</html>

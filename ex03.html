@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* { box-sizing: border-box; } /*border의 두께가 두꺼워짐에 따라 전체 사이즈가 늘어나는 것을 막아줌*/
+	#wrap{ width: 450px; background-color: gray; }
+	.div{ width: 150px; margin-top: 20px; }
+	.a { border: 1px solid black; float: right; }
+	.b { border: 10px solid black; float: right; }
+	.c { border: 20px solid black; float: right; }
+	
+	#wrap02{ display: flex; flex-flow: column; 
+		width: 200px; border: 1px solid black; text-align: center; }
+	#wrap02 div{ width: 100%; }
+	#wrap02 .d01 { order:1; background-color: red; }
+	#wrap02 .d02 { order:2; display: flex; background-color: green; }
+	#wrap02 div:nth-child(3) { order:3; background-color: blue; }
+	
+	.c01{ order: 1; background-color: gray; }
+	.c02{ order: 2; background-color: khaki; } 
+	
+</style>
+</head>
+<body>
+<div id='wrap02'>  <!-- 클래스로 해도 되지만 또 다른 방법 -->
+	<div class="d01"><h1>1</h1></div>
+	<div class="d02">
+		<div class="c01"><h1>내용 1</h1></div>
+		<div class="c02"><h1>내용 2</h1></div>
+	</div>
+	<div><h1>3</h1></div>
+</div>
+
+
+<hr>
+<div id="wrap">
+	<div class='div a'>333</div>
+	<div class='div b'>222</div>
+	<div class='div c'>111</div>
+</div>
+</body>
+</html>
